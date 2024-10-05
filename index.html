@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,9 +10,8 @@
 </head>
 
 <body>
-    <!-- Contenedor principal -->
-    <div class="container">
-        <!-- NavBar con logo y botones -->
+    <div class="container-fluid">
+        <!-- Navbar completo -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <!-- Logo -->
@@ -21,353 +20,329 @@
                         height="50" class="d-inline-block">
                     Instagram
                 </a>
-
-                <!-- Botón de colapso del menú en pantallas pequeñas -->
+                <!-- Botón dispositivos -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Lista de elementos del navbar -->
-                    <ul class="navbar-nav ms-auto d-flex align-items-center">
-
+                <!-- Lista de elementos del navbar -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center">
                         <!-- Botón para crear un nuevo post -->
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-success me-5" type="button" data-bs-toggle="modal"
+                            <button class="btn btn-sm btn-success me-3" type="button" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                 Create a new post
                             </button>
-
-                            <!-- Modal del botón de crear post -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="caption">Caption:</div>
-                                            <textarea class="form-control mb-3"
-                                                placeholder="Add the caption of your post here" rows="5"></textarea>
-                                            <div class="d-flex justify-content-start">
-                                                <span class="input-group-text me-2">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M10.5 0a1 1 0 0 1 .894.553l1.5 3h2.106a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.106l1.5-3A1 1 0 0 1 5.5 0h5zm-4.5 10a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0z" />
-                                                    </svg>
-                                                </span>
-                                                <span class="input-group-text">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 0a4 4 0 0 0-4 4c0 2.6 4 8 4 8s4-5.4 4-8a4 4 0 0 0-4-4zm0 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary btn-success">Publish</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Menú de ajustes -->
+                        </li>
+                        <!-- Menú de ajustes -->
                         <li class="nav-item dropdown">
-
                             <button type="button" class="btn btn-secondary dropdown-toggle d-flex align-items-center"
                                 id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                <!-- Icono de ajuste -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
                                     class="bi bi-gear-fill" viewBox="0 0 16 16">
                                     <path
                                         d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
                                 </svg>
                             </button>
-
                             <!-- Lista de opciones de los ajustes -->
                             <ul class="dropdown-menu dropdown-menu-end p-1" aria-labelledby="dropdownMenuButton">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                <li><a class="dropdown-item" href="#">Accessibility</a></li>
                                 <li><a class="dropdown-item" href="#">Privacy and data</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                             </ul>
-
                         </li>
                     </ul>
                 </div>
-            </div> 
+            </div>
         </nav>
-        
-
-
-
-<!-- PROBANDO EL BOTON DE CAMBIO DE GRID -->
-<div class="d-flex justify-content-center">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-distribute-horizontal" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5m-13 0a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5"/>
-                    <path d="M6 13a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/>
-                </svg>
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-distribute-vertical" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 1.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5m0 13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5"/>
-                    <path d="M2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                </svg>
-            </button>
-        </li>
-    </ul>
-</div>
-
-<div class="tab-content d-flex justify-content-center" style="margin-left: 250px;" id="myTabContent">
-    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-        <div class="container mt-5 d-flex justify-content-center"></div>
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">Vinicius Jr. El Balón de Oro 2024</h5>
-                            <span class="text-muted mb-0">09/21</span>
+        <!-- Modal del botón de crear post -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="caption">Caption:</div>
+                        <textarea class="form-control mb-3" placeholder="Add the caption of your post here"
+                            rows="5"></textarea>
+                        <div class="d-flex justify-content-start">
+                            <span class="input-group-text me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-camera" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.5 0a1 1 0 0 1 .894.553l1.5 3h2.106a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.106l1.5-3A1 1 0 0 1 5.5 0h5zm-4.5 10a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0z" />
+                                </svg>
+                            </span>
+                            <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a4 4 0 0 0-4 4c0 2.6 4 8 4 8s4-5.4 4-8a4 4 0 0 0-4-4zm0 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
+                                </svg>
+                            </span>
                         </div>
                     </div>
-                    <img src="https://www.atalayar.com/asset/thumbnail,1280,720,center,center/media/atalayar/images/2024/08/14/2024081409463617385.jpg" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">1345 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
-                    </div>
-                </div>
-        
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">Santiago Bernabéu</h5>
-                            <span class="text-muted mb-0">09/22</span>
-                        </div>
-                    </div>
-                    <img src="https://static.eldiario.es/clip/49f148a1-43a4-473c-b9f9-a1bd84aba264_16-9-discover-aspect-ratio_default_0_x842y363.jpg" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
-                    </div>
-                </div>
-        
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">Florentino Pérez</h5>
-                            <span class="text-muted mb-0">09/23</span>
-                        </div>
-                    </div>
-                    <img src="https://www.semana.com/resizer/v2/36UCTYBI7VGEHER46T47ERB2HA.jpg?auth=2050b854b4650339999fafd3a8e3af99ed82b56eb931a5f96c2f652033796542&smart=true&quality=75&width=1280&height=720" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">3984 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
-                    </div>
-                </div>
-        
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">Jude Bellingham</h5>
-                            <span class="text-muted mb-0">09/24</span>
-                        </div>
-                    </div>
-                    <img src="https://s1.elespanol.com/2024/01/06/actualidad/822927871_238937577_1706x960.jpg" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">2567 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
-                    </div>
-                </div>
-        
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">Daniel Carvajal</h5>
-                            <span class="text-muted mb-0">09/25</span>
-                        </div>
-                    </div>
-                    <img src="https://images.ecestaticos.com/61DX1OKU2x98T3ij_z7mqAV6dK8=/0x0:2272x1461/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fdfd%2F14e%2F87e%2Fdfd14e87ec66f7f24c6001431d6ddef0.jpg" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">5432 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
-                    </div>
-                </div>
-        
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">Ciudad Deportiva Valdebebas</h5>
-                            <span class="text-muted mb-0">09/26</span>
-                        </div>
-                    </div>
-                    <img src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/portals/realmadrid-com/es-es/news/generic/2024/04/06/fotos/ND_CIUDAD_REAL_MADRID_GENERAL.app.jpg?$Mobile$" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">987 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
-                    </div>
-                </div>
-        
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">Federico Valverde</h5>
-                            <span class="text-muted mb-0">09/27</span>
-                        </div>
-                    </div>
-                    <img src="https://fotografias.larazon.es/clipping/cmsimages02/2022/10/19/87A48955-1A9E-463E-829F-9C9441F55EBD/98.jpg?crop=3425,1927,x0,y178&width=1900&height=1069&optimize=low&format=webply" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">1234 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
-                    </div>
-                </div>
-        
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">Arda Güler</h5>
-                            <span class="text-muted mb-0">09/28</span>
-                        </div>
-                    </div>
-                    <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2024/05/18/thumbs_b_c_c87db6fc311bc1b5f8c1e9c10de2ac42.jpg?v=113458" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">4321 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
-                    </div>
-                </div>
-        
-                <div class="card mb-4" style="width: 500px; height: 525px;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <h5 class="card-title mb-0">La Dinojunta</h5>
-                            <span class="text-muted mb-0">09/29</span>
-                        </div>
-                    </div>
-                    <img src="https://www.fansdelmadrid.com/wp-content/uploads/2019/05/dinojunta.webp" class="card-img-top" alt="Descripción de la imagen" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div class="card-body" style="flex-grow: 1;">
-                        <p class="fw-bold small" style="margin-bottom: 2px;">1500 likes</p>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-    
-    
-    <div class="tab-content d-flex justify-content-center" id="myTabContent">
-        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <div class="container mt-5 d-flex justify-content-center">
-                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+        <!-- Botones cambio de grid -->
+        <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-distribute-horizontal" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5m-13 0a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5" />
+                        <path d="M6 13a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+                    </svg>
+                </button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-distribute-vertical" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 1.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5m0 13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5" />
+                        <path d="M2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <!-- Primer post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Vini Jr.</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://www.atalayar.com/asset/thumbnail,1280,720,center,center/media/atalayar/images/2024/08/14/2024081409463617385.jpg"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Santiago Bernabéu</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://static.eldiario.es/clip/49f148a1-43a4-473c-b9f9-a1bd84aba264_16-9-discover-aspect-ratio_default_0_x842y363.jpg"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercer post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Florentino Pérez</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://www.semana.com/resizer/v2/36UCTYBI7VGEHER46T47ERB2HA.jpg?auth=2050b854b4650339999fafd3a8e3af99ed82b56eb931a5f96c2f652033796542&smart=true&quality=75&width=1280&height=720"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuarto post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Jude Bellingham</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://s1.elespanol.com/2024/01/06/actualidad/822927871_238937577_1706x960.jpg"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quinto post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Ferland Mendy</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://tmssl.akamaized.net//images/foto/galerie/ferland-mendy-real-madrid-1564083394-23950.jpg?lm=1564083406"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sexto post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Luka Modric</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9f5e17ad-a7f9-477f-a49e-5944b8ccb511/ND_SUPERCOPA_RM_ATALANTA_TROFEO_MODRIC_AV33565.app.webp?preferwebp=true"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Séptimo post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Fede Valverde</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://fotografias.larazon.es/clipping/cmsimages02/2022/10/19/87A48955-1A9E-463E-829F-9C9441F55EBD/98.jpg?crop=3425,1927,x0,y178&width=1900&height=1069&optimize=low&format=webply"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Octavo post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Arda Güler</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2024/05/18/thumbs_b_c_c87db6fc311bc1b5f8c1e9c10de2ac42.jpg?v=113458"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Noveno post -->
+                <div class="d-flex justify-content-center mt-4" style="min-height: 585px;">
+                    <div class="card" style="width: 500px; height: 525px;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title mb-0">Daniel Carvajal</h5>
+                                <span class="text-muted mb-0">09/22</span>
+                            </div>
+                        </div>
+                        <img src="https://images.daznservices.com/di/library/DAZN_News/37/12/dani-carvajal-real-madrid-20232024_113tpoce2wptu1haofsahaow5i.png?t=1570497117&w=800"
+                            class="card-img-top" alt="Descripción de la imagen"
+                            style="width: 100%; height: 400px; object-fit: cover;">
+                        <div class="card-body" style="flex-grow: 1;">
+                            <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                            <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="container mt-4">
+                    <div class="row">
+                        <!-- Primera fila de fotos -->
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://www.atalayar.com/asset/thumbnail,1280,720,center,center/media/atalayar/images/2024/08/14/2024081409463617385.jpg"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://static.eldiario.es/clip/49f148a1-43a4-473c-b9f9-a1bd84aba264_16-9-discover-aspect-ratio_default_0_x842y363.jpg"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://www.semana.com/resizer/v2/36UCTYBI7VGEHER46T47ERB2HA.jpg?auth=2050b854b4650339999fafd3a8e3af99ed82b56eb931a5f96c2f652033796542&smart=true&quality=75&width=1280&height=720"
+                                class="img-fluid" alt="">
+                        </div>
+                        <!-- Segunda fila de fotos -->
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://s1.elespanol.com/2024/01/06/actualidad/822927871_238937577_1706x960.jpg"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://tmssl.akamaized.net//images/foto/galerie/ferland-mendy-real-madrid-1564083394-23950.jpg?lm=1564083406"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9f5e17ad-a7f9-477f-a49e-5944b8ccb511/ND_SUPERCOPA_RM_ATALANTA_TROFEO_MODRIC_AV33565.app.webp?preferwebp=true"
+                                class="img-fluid" alt="">
+                        </div>
+                        <!-- Tercera fila de fotos -->
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://fotografias.larazon.es/clipping/cmsimages02/2022/10/19/87A48955-1A9E-463E-829F-9C9441F55EBD/98.jpg?crop=3425,1927,x0,y178&width=1900&height=1069&optimize=low&format=webply"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2024/05/18/thumbs_b_c_c87db6fc311bc1b5f8c1e9c10de2ac42.jpg?v=113458"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <img src="https://images.daznservices.com/di/library/DAZN_News/37/12/dani-carvajal-real-madrid-20232024_113tpoce2wptu1haofsahaow5i.png?t=1570497117&w=800"
+                                class="img-fluid" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://www.atalayar.com/asset/thumbnail,1280,720,center,center/media/atalayar/images/2024/08/14/2024081409463617385.jpg" class="card-img-top" alt="Imagen 1" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://static.eldiario.es/clip/49f148a1-43a4-473c-b9f9-a1bd84aba264_16-9-discover-aspect-ratio_default_0_x842y363.jpg" class="card-img-top" alt="Imagen 1" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div><div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://www.semana.com/resizer/v2/36UCTYBI7VGEHER46T47ERB2HA.jpg?auth=2050b854b4650339999fafd3a8e3af99ed82b56eb931a5f96c2f652033796542&smart=true&quality=75&width=1280&height=720" class="card-img-top" alt="Imagen 1" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://s1.elespanol.com/2024/01/06/actualidad/822927871_238937577_1706x960.jpg" class="card-img-top" alt="Imagen 1" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://images.ecestaticos.com/61DX1OKU2x98T3ij_z7mqAV6dK8=/0x0:2272x1461/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fdfd%2F14e%2F87e%2Fdfd14e87ec66f7f24c6001431d6ddef0.jpg" class="card-img-top" alt="Imagen 2" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/portals/realmadrid-com/es-es/news/generic/2024/04/06/fotos/ND_CIUDAD_REAL_MADRID_GENERAL.app.jpg?$Mobile$" class="card-img-top" alt="Imagen 3" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://fotografias.larazon.es/clipping/cmsimages02/2022/10/19/87A48955-1A9E-463E-829F-9C9441F55EBD/98.jpg?crop=3425,1927,x0,y178&width=1900&height=1069&optimize=low&format=webply" class="card-img-top" alt="Imagen 4" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2024/05/18/thumbs_b_c_c87db6fc311bc1b5f8c1e9c10de2ac42.jpg?v=113458" class="card-img-top" alt="Imagen 5" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="card">
-                            <img src="https://www.fansdelmadrid.com/wp-content/uploads/2019/05/dinojunta.webp" class="card-img-top" alt="Imagen 6" style="width: 100%; height: 250px; object-fit: cover;">
-                        </div>
-                    </div>
-                </div>
-                
-                
-
-
-
-
-            </div>
-        </div>        
-    </div>    
-    
-
-
-
-  </div>
-
-
-
-
-
-
-
-        <!-- A partir de aquí comienzan las fotos -->
-        
-        
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

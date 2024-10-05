@@ -1,0 +1,199 @@
+<div class="tab-content" id="myTabContent">
+            <!-- Posts de la feed -->
+
+            <div class="tab-pane fade show active d-flex flex-column" id="home-tab-pane" role="tabpanel"
+                aria-labelledby="home-tab" tabindex="0">
+                <div class="container-fluid d-flex flex-column justify-content-center mt-5">
+                    <!-- FOTO 1 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Vini Jr.</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://www.atalayar.com/asset/thumbnail,1280,720,center,center/media/atalayar/images/2024/08/14/2024081409463617385.jpg"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOTO 2 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Santiago Bernabéu</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://static.eldiario.es/clip/49f148a1-43a4-473c-b9f9-a1bd84aba264_16-9-discover-aspect-ratio_default_0_x842y363.jpg"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 3 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Florentino Pérez</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://www.semana.com/resizer/v2/36UCTYBI7VGEHER46T47ERB2HA.jpg?auth=2050b854b4650339999fafd3a8e3af99ed82b56eb931a5f96c2f652033796542&smart=true&quality=75&width=1280&height=720"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 4 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Jude Bellingham</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://s1.elespanol.com/2024/01/06/actualidad/822927871_238937577_1706x960.jpg"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 5 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Dani Carvajal</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://images.ecestaticos.com/61DX1OKU2x98T3ij_z7mqAV6dK8=/0x0:2272x1461/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fdfd%2F14e%2F87e%2Fdfd14e87ec66f7f24c6001431d6ddef0.jpg"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 6 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Ciudad deportiva Valdebebas</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/portals/realmadrid-com/es-es/news/generic/2024/04/06/fotos/ND_CIUDAD_REAL_MADRID_GENERAL.app.jpg?$Mobile$"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 7 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Fede Valverde</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://fotografias.larazon.es/clipping/cmsimages02/2022/10/19/87A48955-1A9E-463E-829F-9C9441F55EBD/98.jpg?crop=3425,1927,x0,y178&width=1900&height=1069&optimize=low&format=webply"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 8 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">Arda Güler</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2024/05/18/thumbs_b_c_c87db6fc311bc1b5f8c1e9c10de2ac42.jpg?v=113458"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 9 -->
+                    <div class="d-flex justify-content-center" style="min-height: 585px;">
+                        <div class="card" style="width: 500px; height: 525px;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title mb-0">La Dinojunta</h5>
+                                    <span class="text-muted mb-0">09/22</span>
+                                </div>
+                            </div>
+                            <img src="https://www.fansdelmadrid.com/wp-content/uploads/2019/05/dinojunta.webp"
+                                class="card-img-top" alt="Descripción de la imagen"
+                                style="width: 100%; height: 400px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <p class="fw-bold small" style="margin-bottom: 2px;">2678 likes</p>
+                                <p class="card-text">This is an example of a very good photo you can post on Instagram.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <!-- <div class="tab-pane fade show active d-flex flex-column" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"> -->
+            <!-- Fotos de la feed -->
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container">
+                    <h5>Contenido del Tab de Perfil</h5>
+                    <p>Aquí puedes agregar el contenido que desees mostrar al hacer clic en el segundo tab.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
